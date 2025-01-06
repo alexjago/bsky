@@ -167,6 +167,7 @@ class BskyComments extends HTMLElement {
         --background-color: white;
         --text-color: black;
         --link-color: gray;
+        --link-visited-color: gray;
         --link-hover-color: black;
         --comment-meta-color: gray;
         --error-color: red;
@@ -174,6 +175,16 @@ class BskyComments extends HTMLElement {
         --button-background-color: rgba(0,0,0,0.05);
         --button-hover-background-color: rgba(0,0,0,0.1);
         --author-avatar-border-radius: 100%;
+      }
+
+      a {
+        color: var(--link-color);
+      }
+      a:hover {
+        color: var(--link-hover-color);
+      }
+      a:visited {
+        color: var(--link-visited-color);
       }
 
       comments {
